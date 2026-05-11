@@ -3,6 +3,7 @@ function App() {
   const firstName = "Dilusha";
   const middleName = "Lakshan";
   const lastName = "Jayasooriya";
+  const city = "Chilaw";
   const age = 22;
   const getFullName = (f, m, l) => {
     return `${f} ${m} ${l}`;
@@ -25,3 +26,5 @@ function App() {
 }
 
 export default App
+
+
