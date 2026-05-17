@@ -10,7 +10,15 @@ function App() {
     <>
       <div id="wrapper">
         <HeaderContent/>
-        <BodyContent/>
+        <BodyContent>
+          <button>Click Me</button>
+          <p>Hello there !</p>
+        </BodyContent>
+
+        <BodyContent>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis accusantium, rem vero aut optio doloribus amet facere dicta cum enim tenetur quasi recusandae consectetur excepturi ipsam, porro ex! Suscipit, quis?
+        </BodyContent>
+        
         <FooterContent/>
 
       </div>

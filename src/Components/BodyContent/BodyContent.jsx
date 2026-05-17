@@ -1,12 +1,14 @@
 import React from 'react'
 import './BodyContent.css'
 
-function BodyContent() {
+function BodyContent(props) {
   return (
     <>
         <div id="bodycontent">
-            <p>main content</p>
+            <h3>Main Content</h3>
+            {props.children}
         </div>
+        
 
     </>
   )
