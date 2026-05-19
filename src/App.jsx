@@ -1,20 +1,24 @@
-import BodyContent from "./Components/BodyContent/BodyContent";
-import FooterContent from "./Components/FooterContent/FooterContent";
-import HeaderContent from "./Components/HeaderContent/HeaderContent";
-import { useEffect, useState } from "react";
-import LoggedIn from "./Components/LoggedIn";
-import LoggedOut from "./Components/LoggedOut";
-
 function App() {
 
-  const loggedin = false;
+  let items = [
+    "item1", "item2", "item3", "item4", "item5"
+  ]
 
   return (
     <>
 
-      {loggedin && <LoggedIn/>}
-      {!loggedin && <LoggedOut/>}
-      
+      <ul>
+        {items.map((item) => {
+          return(
+            <li key={item}>step 01  {item}</li>
+          )
+        })}
+
+        {items.map((item) => (
+            <li key={item}>step 02  {item}</li>
+          ))}
+        
+      </ul>
       
     </>
   );
