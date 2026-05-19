@@ -1,29 +1,25 @@
-import BodyContent from "./Components/BodyContent/BodyContent";
-import FooterContent from "./Components/FooterContent/FooterContent";
-import HeaderContent from "./Components/HeaderContent/HeaderContent";
-import { useState } from "react";
-
 function App() {
 
-  const [count, setcount] = useState(0)
-
-
-  const decrementFunction = () => {
-    setcount(count - 1)
-  }
-  const incrementFunction = () => {
-    setcount(count + 1)
-  }
-
+  let items = [
+    "item1", "item2", "item3", "item4", "item5"
+  ]
 
   return (
     <>
-      
-      <p>Counter</p>
-      <button onClick={decrementFunction}>  -  </button>
-      <button onClick={incrementFunction}>  +  </button>
-      <p>{count}</p>
 
+      <ul>
+        {items.map((item) => {
+          return(
+            <li key={item}>step 01  {item}</li>
+          )
+        })}
+
+        {items.map((item) => (
+            <li key={item}>step 02  {item}</li>
+          ))}
+        
+      </ul>
+      
     </>
   );
 }
