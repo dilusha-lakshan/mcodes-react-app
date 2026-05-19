@@ -1,29 +1,21 @@
 import BodyContent from "./Components/BodyContent/BodyContent";
 import FooterContent from "./Components/FooterContent/FooterContent";
 import HeaderContent from "./Components/HeaderContent/HeaderContent";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import LoggedIn from "./Components/LoggedIn";
+import LoggedOut from "./Components/LoggedOut";
 
 function App() {
 
-  const [count, setcount] = useState(0)
-
-
-  const decrementFunction = () => {
-    setcount(count - 1)
-  }
-  const incrementFunction = () => {
-    setcount(count + 1)
-  }
-
+  const loggedin = false;
 
   return (
     <>
-      
-      <p>Counter</p>
-      <button onClick={decrementFunction}>  -  </button>
-      <button onClick={incrementFunction}>  +  </button>
-      <p>{count}</p>
 
+      {loggedin && <LoggedIn/>}
+      {!loggedin && <LoggedOut/>}
+      
+      
     </>
   );
 }
