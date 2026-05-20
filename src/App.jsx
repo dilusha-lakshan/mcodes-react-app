@@ -27,6 +27,8 @@ function App() {
           ))}
         
       </ul>
+
+      <h1 className="bg-blue-500 break-all text-green-400">Test Tailwind CSS</h1>
       
     </>
   );
