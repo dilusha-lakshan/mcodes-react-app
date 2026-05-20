@@ -1,4 +1,5 @@
 import './App.css';
+import { FaHome } from "react-icons/fa";
 
 
 function App() {
@@ -28,7 +29,10 @@ function App() {
         
       </ul>
 
-      <h1 className="bg-blue-500 break-all text-green-400" uppercase>Test Tailwind CSS</h1>
+      <h1 className="bg-blue-500 break-all text-green-400 uppercase">Test Tailwind CSS</h1>
+
+      <h1>Importing REACT ICONS</h1>
+      <h2>Ex:<FaHome />HOME</h2>
       
     </>
   );
